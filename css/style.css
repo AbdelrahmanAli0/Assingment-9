@@ -1,0 +1,294 @@
+body {
+  background-color: rgb(248, 250, 252);
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: white !important;
+  position: fixed !important;
+
+  top: 0px;
+  z-index: 999;
+  width: 100% !important;
+}
+
+.left-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.left-nav svg {
+  background-color: rgb(95, 53, 249);
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px rgb(95, 53, 249);
+}
+.left-nav h1 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+.left-nav span {
+  color: hsl(265.36, 99.1%, 56.47%);
+  font-weight: bolder;
+}
+.right-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.right-nav button {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #5f35f9;
+  padding: 8px;
+  border-radius: 10px;
+}
+.right-nav button:hover {
+  background-color: #5f35f9;
+  transform: translatey(-5px);
+  transition: 0.2s;
+  box-shadow: 0px 10px 10px #5f35f9;
+}
+.fa-bell {
+  font-size: 20px;
+  color: #6a7282;
+  padding: 10px;
+}
+.fa-bell:hover {
+  background-color: rgb(207, 210, 215);
+  border-radius: 10px;
+}
+.fa-gear {
+  font-size: 20px;
+  color: #6a7282;
+  padding: 10px;
+}
+.fa-gear:hover {
+  background-color: rgb(207, 210, 215);
+  border-radius: 10px;
+}
+.right-nav img {
+  width: 45px;
+  border-radius: 15px;
+}
+/* ////////////////////////// */
+.main {
+  background-color: rgb(248, 250, 252);
+}
+.add-contact form {
+  padding: 10px;
+  width: 500px;
+}
+.fa-star {
+  color: yellow;
+}
+.fa-heart-pulse {
+  color: rgb(255, 32, 86);
+}
+.add-contact {
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: transparent;
+}
+.fa-user {
+  background-color: rgb(37, 115, 254);
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+.cancel-btn {
+  width: 200px;
+  font-size: 15px;
+  background-color: rgb(243, 244, 246);
+  color: black;
+}
+.cancel-btn:hover {
+  background-color: rgb(243, 244, 246);
+}
+.save-btn {
+  width: 200px;
+  font-size: 15px;
+  background-color: rgb(88, 55, 248);
+  color: white;
+}
+.save-btn:hover {
+  color: rgb(88, 55, 248);
+  background-color: white;
+}
+.fa-users {
+  font-size: 100px;
+}
+.info-boxes {
+  margin-top: 150px;
+}
+.total-box svg {
+  font-size: 25px;
+  background-color: rgb(26, 103, 254);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.favorites-box svg {
+  font-size: 25px;
+  background-color: rgb(255, 132, 0);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.emergency-box svg {
+  font-size: 25px;
+  background-color: rgb(237, 0, 38);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.search-input::placeholder {
+  color: rgb(160, 167, 180);
+  font-weight: bolder;
+}
+.favorite-add {
+  background-color: rgb(255, 247, 237);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 20px;
+}
+.favorite-add svg {
+  font-size: 15px;
+  background-color: rgb(255, 132, 0);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.emergency-add {
+  background-color: rgb(255, 247, 237);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 20px;
+}
+.emergency-add svg {
+  font-size: 15px;
+  background-color: rgb(242, 0, 52);
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+.contacts-found svg{
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: rgb(243,244,246);
+  color: rgb(209,213,220);
+}
+.contacts-found p{
+  color:rgb(119,127,141) ;
+  font-weight: bold;
+}
+.contacts-found h6{
+  color:rgb(200,207,214) ;
+}
+.box-name{
+  width: 70px;
+}
+.fa-phone{
+  color: rgb(43,109,252);
+  background-color: rgb(219,234,254);
+  padding: 8px;
+  border-radius: 10px;
+}
+.fa-envelope{
+  padding: 8px;
+  border-radius: 10px;
+  color:rgb(132,43,254);
+  background-color: rgb(237,233,254);
+}
+.fa-location-dot{
+  padding: 8px;
+  border-radius: 10px;
+  color: rgb(0,153,102);
+  background-color: rgb(208,250,229);
+}
+.phone-svg{
+  color: rgb(0,153,102);
+  background-color: rgb(208,250,229);
+}
+.phone-footer:hover{
+  background-color: rgb(156, 205, 156);
+  cursor: pointer;
+}
+.envelope-footer:hover{
+  color: gold;
+  background-color: gainsboro;
+  cursor: pointer;
+}
+.star-footer{
+  color: rgb(163,171,183);
+  padding: 10px;
+  border-radius: 10px;
+}
+.star-footer:hover{
+  color: yellow;
+  background-color:gainsboro;
+  cursor: pointer;
+}
+.heart-footer{
+  color: rgb(163,171,183);
+  padding: 10px;
+  border-radius: 10px;
+}
+.heart-footer:hover{
+color: rgb(237,0,40);
+background-color:gainsboro;
+cursor: pointer;
+}
+.fa-pen{
+  color: rgb(163,171,183);
+  padding: 10px;
+  border-radius: 10px;
+}
+.fa-pen:hover{
+  color:rgb(132,43,254);
+  background-color:gainsboro;
+  cursor: pointer;
+}
+.fa-trash-can{
+  color: rgb(163,171,183);
+  padding: 10px;
+  border-radius: 10px;
+}
+.fa-trash-can:hover{
+  color: rgb(237,0,40);
+  background-color:gainsboro;
+  cursor: pointer;
+}
+.fav-box{
+  background-color: rgb(249,250,251);
+  border-radius: 10px;
+}
+.test{
+  display: block;
+  height:auto !important;
+}

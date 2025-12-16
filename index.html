@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <div class="left-nav pt-2">
+          <i class="fa-solid fa-address-book"></i>
+          <div>
+            <h1 class="m-0">Contact <span>Hub</span></h1>
+            <p class="text-secondary">Smart Contact Manager</p>
+          </div>
+        </div>
+        <div class="right-nav">
+          <div>
+            <button
+              onclick="openmodal()"
+              id="addcontact"
+              type="button"
+              class="btn btn-secondary"
+            >
+              <i class="fa-solid fa-plus"></i>
+              <p class="m-0 fw-bolder">Add Contact</p>
+            </button>
+          </div>
+          <i class="fa-solid fa-bell"></i>
+          <i class="fa-solid fa-gear"></i>
+          <img src="img/avatar-2.jpg" alt="avatar-2" />
+        </div>
+      </div>
+    </nav>
+    <div id="modalcontainer"></div>
+
+    <!-- ////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////// -->
+    <div class="main">
+      <div class="container info-boxes">
+        <div class="row g-3 gap-5">
+          <div
+            class="total-box col-md-6 col-lg-3 bg-white d-flex gap-4 p-3 rounded-4 align-items-center"
+          >
+            <i class="fa-solid fa-users"></i>
+            <div>
+              <h5 class="text-secondary">Total</h5>
+              <h3>0</h3>
+            </div>
+          </div>
+          <div
+            class="favorites-box col-md-6 col-lg-3 bg-white d-flex gap-4 p-3 rounded-4 align-items-center"
+          >
+            <i class="fa-solid fa-star"></i>
+            <div>
+              <h5 class="text-secondary">Favorites</h5>
+              <h3>0</h3>
+            </div>
+          </div>
+          <div
+            class="emergency-box col-md-6 col-lg-3 bg-white d-flex gap-4 p-3 rounded-4 align-items-center"
+          >
+            <i class="fa-solid fa-heart-pulse"></i>
+            <div>
+              <h5 class="text-secondary">Emergency</h5>
+              <h3>0</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 ">
+          <div class="col-lg-8 test">
+            <h3 class="fs-1 fw-bolder">All Contacts</h3>
+            <p class="fw-semibold text-secondary">
+              Manage and organize your 0 contacts
+            </p>
+            <label for="search" class="form-label"></label>
+            <input
+              placeholder="Search By Name,Phone, or Email . . . . ."
+              type="search"
+              class="form-control rounded-4 p-3 search-input"
+              id="search"
+              aria-describedby="search"
+              oninput="searchcontact()"
+            />
+          </div>
+          <div id="favbox" class="col-lg-4 g-2">
+            
+            <div class="card rounded-4 h-75">
+              <div class="emergency-add">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <div>
+                  <h4 class="m-0">Emergency</h4>
+                  <p class="text-secondary">
+                    Important contacts for urgent calls
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center ">
+                <p class="text-secondary text-center">No emergency yet</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="col-lg-8 mt-4">
+              <div id="rowdata" class="row g-3"></div>
+            </div>
+            <div id="nocontact" class="col-lg-8 contacts-found text-center">
+      <i class="fa-solid fa-address-book"></i>
+      <p>No contacts found</p>
+      <h6>Click "Add Contact" to get started</h6>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+      </body>
+</html>
